@@ -137,6 +137,9 @@ class JqTreeWidget extends MouseWidget
             if $.type(url_info) == 'string'
                 url_info = url: url_info
 
+            if not url_info
+                url_info = []
+
             if not url_info.method
                 url_info.method = 'get'
 
